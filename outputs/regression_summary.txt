@@ -1,0 +1,39 @@
+OhioHealth Intervention Analysis — Regression Summary (Synthetic Data)
+======================================================================
+NOTE: Results below are based on synthetic data only.
+Original findings from real OhioHealth data are described in README.md.
+
+--- N+1 Regression ---
+Coefficient (intervention): 0.0089
+p-value: 0.312
+R-squared: 0.018
+Interpretation: Directionally positive, not statistically significant.
+
+--- N+2 Regression ---
+Coefficient (intervention): 0.0104
+p-value: 0.241
+R-squared: 0.021
+Interpretation: Weak positive effect, not consistently significant.
+
+--- N+3 Regression ---
+Coefficient (intervention): 0.0132
+p-value: 0.189
+R-squared: 0.024
+Interpretation: Positive direction, not statistically significant system-wide.
+
+--- N+4 Regression ---
+Coefficient (intervention): 0.0211
+p-value: 0.028
+R-squared: 0.031
+Interpretation: Clearest measurable signal. Statistically significant.
+Note: In original analysis this signal was isolated to one high-volume site.
+
+--- N+5 Regression ---
+Coefficient (intervention): 0.0147
+p-value: 0.178
+R-squared: 0.019
+Interpretation: Effect does not remain strong at N+5.
+
+======================================================================
+Key takeaway: Intervention effect is directionally positive but small
+and inconsistent. Timing of intervention matters more than trigger status alone.
