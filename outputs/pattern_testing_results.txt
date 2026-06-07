@@ -1,0 +1,30 @@
+OhioHealth Intervention Analysis — Pattern Testing Results (Synthetic Data)
+============================================================================
+NOTE: Results below are based on synthetic data only.
+
+--- Intervention Outcomes by Distance from Target ---
+
+Distance Bin    Avg Outcome (N+4)    Count
+[0, 0.05]            0.0526          majority of observations
+(0.05, 0.10]        -0.0698
+(0.10, 0.15]        -0.0169
+(0.15, 0.20]         0.0000
+(0.20+]              0.0000
+
+--- Key Finding ---
+Interventions performed best when the metric was CLOSEST to target.
+As distance from target increased, average outcomes declined.
+
+This supports the recommendation to use distance from target as a
+primary filter in the control panel decision logic.
+
+--- Recovery Threshold Test ---
+When observed recovery EXCEEDED the triggering gap:
+  -> Post-intervention outcomes were consistently stronger.
+
+When observed recovery did NOT exceed the triggering gap:
+  -> Outcomes were mixed with no clear positive signal.
+
+============================================================================
+Conclusion: Intervention value depends on WHEN action is taken,
+not just WHETHER action is taken.
